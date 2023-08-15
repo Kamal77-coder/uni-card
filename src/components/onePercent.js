@@ -10,10 +10,9 @@ function OnePercentComp(props) {
         flexStyle : {
             style : flexStyle
         },
-        img,
         iconStyle
     } = props
-    console.log(iconStyle)
+    
 
     return (
         <div className="one-percent-comp" style={flexStyle}>
