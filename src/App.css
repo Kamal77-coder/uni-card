@@ -1,3 +1,10 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 100px;
+}
 .App {
   text-align: center;
   position: relative;
@@ -105,11 +112,14 @@
   font-size: 40px;
   padding: 100px;
   color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 strong{
   color:black;
   opacity: 1;
-  font-weight: 400;
+  font-weight: 500;
 }
 .consent-label{
   display: flex;
@@ -119,6 +129,64 @@ strong{
     width: 304px;
     text-align: initial;
 }
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background: linear-gradient(140.86deg, #65ECD8 11.07%, #FDEF78 80.28%);
+  margin-top: 200px;
+  position: relative;
+}
+.arrow{
+  content:  url("/public/arrow.svg");
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.comp-icon{
+  width: 448px;
+  height: 424px;
+}
+.one-percent-icon{
+  content:  url("/public/one_percent_cashback.png");
+}
+.five-x-reward{
+  content:  url("/public/five_x_rewards.png");
+  width: 448px;
+  height: 424px;
+}
+.forex{
+  content: url("/public/forex_globe.png");
+}
+.one-percent-comp{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  column-gap: 150px;
+}
+
+.description{
+  font-size: 40px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  align-items: baseline;
+  text-align: initial;
+}
+.strong-des{
+  font-weight: 700;
+}
+.strong-sub{
+  color : gray;
+}
+.desc-sub{
+  font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: gray;
+    text-align: initial;
+}
+  
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
