@@ -1,9 +1,8 @@
 .page{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .App {
   text-align: center;
@@ -13,6 +12,7 @@
   column-gap: 226px;
   align-items: center;
   background-color: #61dafb;
+  width: 100%;
 }
 
 .App-logo {
@@ -38,12 +38,56 @@
     height: 100%;
   }
 }
-.uni-logo{
-  content: url("/public/uni-logo.svg");
-  width: 120px;
-    height: 90px;
-    margin-bottom: 100px;
+.description-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  row-gap: 10px;
 }
+.description-heading {
+  font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    width: 300px;
+}
+.description-icon {
+  width: 112px;
+  height: 112px;
+}
+.description-subheading {
+  font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(142,147,147,var(--tw-text-opacity));
+    width: 310px;
+}
+
+.Footer{
+  background-color: black;
+  color: gray;
+  padding: 50px 94px 150px 100px;
+}
+.link , .footer-link{
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+.footer-link{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.gradient-line{
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg,#00dcc8 26.31%,#00dcc8 61.59%,#fff061 74.32%,#fff061 85.31%);
+  transform: matrix(1,0,0,-1,0,0);
+  width: 100%;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .heading {
   font-size: 54px;
   text-align: initial;
@@ -63,10 +107,57 @@
   display: flex;
   column-gap: 10px;
 }
+
+.btn-container{
+  width: 224px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+}
 .apply-now{
   background-color: rgb(253, 239, 120);
   border-radius: 0.75em;
   width: 95px;
+}
+.experience-heading {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+}
+.exp-subHeading{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  --tw-text-opacity: 1;
+    color: rgba(191,201,204,var(--tw-text-opacity));
+}
+.Experience{
+  background-color: rgba(34,38,39,var(--tw-bg-opacity));
+  --tw-bg-opacity: 1;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.gradient-text {
+  background-image: linear-gradient(158deg,#5ad6c4,#fdef78);
+ background: linear-gradient(158deg,#5ad6c4,#fdef78);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.playStore {
+  content: url("/public/playStore.svg");
+}
+.appStore{
+  content: url("/public/appStore.svg");
 }
 .screen-icon {
   width : 500px;
@@ -109,7 +200,7 @@
   content: url("/public/uni-img.png");
   width: 420px;
   height: 420px;
-  z-index: 2;
+  margin-top: 100px;
 }
 .middle{
   text-align: center;
@@ -169,6 +260,11 @@ strong{
 .rupee-icon {
   content: url("/public/benefitIcons/rupee_bubble.webp");
 }
+.sbm-icon {
+  content: url("/public/SBM.svg");
+  width: 176px;
+  height: 56px;
+}
 .pcidss{
   content: url("/public/benefitIcons/pcidss_cert.svg");
   height: 33px;
@@ -182,11 +278,33 @@ strong{
 .forex{
   content: url("/public/forex_globe.png");
 }
+.free-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  margin-top: 162px;
+  margin-bottom: 162px;
+}
+.free-text{
+  --tw-text-opacity: 1;
+  color: rgba(90,214,196,var(--tw-text-opacity));
+  font-weight: 500;
+}
 .one-percent-comp{
   display: flex;
   text-align: center;
   align-items: center;
   column-gap: 150px;
+}
+.middle-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 120px;
 }
 .mobile-description {
   background-color: black;
@@ -197,13 +315,33 @@ strong{
   width: 100%;
   row-gap: 100px;
 }
+.Download {
+  background : linear-gradient(158deg,#5ad6c4,#fdef78);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 100px;
+}
+.Note{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  --tw-text-opacity: 1;
+  color: rgba(191,201,204,var(--tw-text-opacity));
+  background-color: black;
+  text-align: center;
+  padding: 64px 48px;
+  font-size: 24px;
+}
 
 .description{
   font-size: 40px;
   width: 500px;
   display: flex;
   flex-direction: column;
-  row-gap: 50px;
+  row-gap: 20px;
   align-items: baseline;
   text-align: initial;
 }
@@ -224,29 +362,25 @@ strong{
   column-gap: 120px;
   padding-bottom: 100px;
 }
-.description-container {
+.security{
+  --tw-bg-opacity: 1;
+  background-color: rgba(34,34,34,var(--tw-bg-opacity));
+  height: 64px;
+  --tw-text-opacity: 1;
+  color: rgba(141,141,149,var(--tw-text-opacity));
   display: flex;
-  flex-direction: column;
-  text-align: start;
-  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
-.description-heading {
-  font-size: 1.5rem;
-    line-height: 2rem;
-    --tw-text-opacity: 1;
-    color: rgba(255,255,255,var(--tw-text-opacity));
-    width: 300px;
+.uni-logo{
+  content: url("/public/uni-logo.svg");
+  width: 120px;
+    height: 90px;
 }
-.description-icon {
-  width: 112px;
-  height: 112px;
-}
-.description-subheading {
-  font-size: 1.125rem;
-    line-height: 1.75rem;
-    --tw-text-opacity: 1;
-    color: rgba(142,147,147,var(--tw-text-opacity));
-    width: 310px;
+.uni-logo-2 {
+  content: url("/public/uniLogo2.svg");
+  width: 120px;
+  height: 90px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -21,7 +21,7 @@ function OnePercentComp(props) {
             <div className='description'>
                 <div className="header">
                     <span className="strong-des" style={headingStyle}>{firstLine}</span>
-                    <span className="strong-sub" style = {secondLineStyle}>{secondLine}</span>
+                    <span className= {`${iconStyle.includes("screen") ? "gradient-text":"strong-sub"}`} style = {secondLineStyle}>{secondLine}</span>
                 </div>
                 <span className="desc-sub">{subTitle}</span>
             </div>

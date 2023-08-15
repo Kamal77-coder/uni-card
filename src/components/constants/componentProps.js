@@ -17,11 +17,6 @@ export const screeOneProps = {
         color : "white",
         fontWeight : "500"
       },
-      secondLineStyle : {
-        backgroundImage: "linear-gradient(90deg,var(--uni-text-gradient-green) 25%,var(--uni-text-gradient-yellow))",
-        background: "linear-gradient(90deg,var(--uni-text-gradient-green) 25%,var(--uni-text-gradient-yellow))",
-        backgroundClip: "text",
-      }
     },
     iconStyle : "app-screen1 screen-icon",
 }
@@ -46,11 +41,6 @@ export const screenTwoProps = {
         fontWeight : "500",
         display :"block",
       },
-      secondLineStyle : {
-        backgroundImage: "linear-gradient(90deg,var(--uni-text-gradient-green) 25%,var(--uni-text-gradient-yellow))",
-        background: "linear-gradient(90deg,var(--uni-text-gradient-green) 25%,var(--uni-text-gradient-yellow))",
-        backgroundClip: "text",
-      }
     },
     iconStyle : "app-screen2 screen-icon"
 }
