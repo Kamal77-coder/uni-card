@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../App.css';
-import videoBg from "./video.mp4"
+// import videoBg from "./video.mp4"
 
 function Header() {
 
@@ -8,6 +8,8 @@ function Header() {
   const [check , setCheck] = useState("false")
 
   const onTextClick =(e) => {
+    if(e.target.value.length > 10)
+     return
     setText(e.target.value)
   }
 
@@ -20,7 +22,7 @@ function Header() {
   }
   return (
     <div className="App">
-        <video src={videoBg} autoPlay loop muted className='video-class'/>
+        {/* <video src={videoBg} autoPlay loop muted className='video-class'/> */}
       <div className='container'>
         <div className='uni-logo'></div>
         <span className='heading'><strong>NX Wave.</strong> The next-gen credit card for those who love rewards.</span>

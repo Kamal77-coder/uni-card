@@ -68,6 +68,10 @@
   border-radius: 0.75em;
   width: 95px;
 }
+.screen-icon {
+  width : 500px;
+  height : 665px;
+}
 .input-container{
   --tw-bg-opacity: 1;
    background-color: rgba(0,0,0,var(--tw-bg-opacity));
@@ -150,6 +154,26 @@ strong{
 .one-percent-icon{
   content:  url("/public/one_percent_cashback.png");
 }
+.app-screen1{
+  content: url("/public/app_screen_1.webp");
+}
+.app-screen2{
+  content: url("/public/app_screen_2.webp");
+}
+.whatsApp-icon {
+  content: url("/public/benefitIcons/whatsapp_bubble.webp");
+}
+.antivirus-icon {
+  content: url("/public/benefitIcons/antivirus_bubble.webp");
+}
+.rupee-icon {
+  content: url("/public/benefitIcons/rupee_bubble.webp");
+}
+.pcidss{
+  content: url("/public/benefitIcons/pcidss_cert.svg");
+  height: 33px;
+  width: 84px;
+}
 .five-x-reward{
   content:  url("/public/five_x_rewards.png");
   width: 448px;
@@ -163,6 +187,15 @@ strong{
   text-align: center;
   align-items: center;
   column-gap: 150px;
+}
+.mobile-description {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  row-gap: 100px;
 }
 
 .description{
@@ -186,7 +219,35 @@ strong{
     color: gray;
     text-align: initial;
 }
-  
+.BenefitComponent{
+  display: flex;
+  column-gap: 120px;
+  padding-bottom: 100px;
+}
+.description-container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  row-gap: 10px;
+}
+.description-heading {
+  font-size: 1.5rem;
+    line-height: 2rem;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    width: 300px;
+}
+.description-icon {
+  width: 112px;
+  height: 112px;
+}
+.description-subheading {
+  font-size: 1.125rem;
+    line-height: 1.75rem;
+    --tw-text-opacity: 1;
+    color: rgba(142,147,147,var(--tw-text-opacity));
+    width: 310px;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

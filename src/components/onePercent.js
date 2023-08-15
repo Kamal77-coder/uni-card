@@ -6,24 +6,26 @@ function OnePercentComp(props) {
     const {
         firstLine , 
         secondLine , 
-        subtitle,
+        subTitle,
         flexStyle : {
-            style : flexStyle
+            style : flexStyle,
+            headingStyle,
+            secondLineStyle
         },
-        iconStyle
+        iconStyle,
     } = props
     
 
     return (
-        <div className="one-percent-comp" style={flexStyle}>
+        <div className="one-percent-comp" style={flexStyle} id = {iconStyle}>
             <div className='description'>
                 <div className="header">
-                    <span className="strong-des">{firstLine}</span>
-                    <span className="strong-sub">{secondLine}</span>
+                    <span className="strong-des" style={headingStyle}>{firstLine}</span>
+                    <span className="strong-sub" style = {secondLineStyle}>{secondLine}</span>
                 </div>
-                <span className="desc-sub">{subtitle}</span>
+                <span className="desc-sub">{subTitle}</span>
             </div>
-            <div className= {`${iconStyle} comp-icon`} ></div>
+            <div className= {`${iconStyle} ${iconStyle.includes("screen") ? "":"comp-icon"}`} ></div>
         </div>
     );
 }
