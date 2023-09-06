@@ -371,6 +371,7 @@ strong{
   align-items: center;
   justify-content: center;
 }
+
 .uni-logo{
   content: url("/public/uni-logo.svg");
   width: 120px;
